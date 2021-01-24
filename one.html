@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // -------------------------
+        // let count = prompt('Введите число');
+        // if (count <=10 || count >=25) {
+        //     alert('true');
+        // }
+        // else { alert ('false') }
+
+        //----------------------
+        // const currentPassword = '1234';
+        // let password = prompt('Введите пароль');
+
+        // if (password == null) {
+        //     alert('Отменено');
+        // } else if (password === currentPassword) {
+        //     alert('Пароль верный');
+        // } else {
+        //     alert("Пароль не верный");
+        // }
+
+
+
+        //------------------------
+        // let i = 0
+        // while (i < 5) {
+        //     alert(`number ${i}`); //  от 0 до 4
+        //     i++;    
+        //     // alert(`number ${i}`); //  от 1 до 5
+        // }
+
+        //-------------------------
+
+        // const arr = [1,2,3,4,6,5];
+        // function swap (a,i,j) {
+        //     let temp = a[i];
+        //     a[i] = a[j];
+        //     a[j] = temp;
+        // }
+
+        // console.log(arr)
+        // for(let i=arr.length-1; i>0; i--){
+        //     let isSwapCalled = false;
+        //     for (let j=0; j<i; j++){
+        //         if(arr[j]>arr[j+1]){
+        //             swap (arr, j, j+1);
+        //             isSwapCalled = true;
+        //         }
+        //     }
+        //     if (!isSwapCalled){
+        //         alert('break')
+        //         break
+        //     }
+        // }
+        // console.log(arr)
+
+        //-------------------------
+
+
+        // let arr = new Array();
+        // for (let i=0; i<4; i++){
+        //     arr[i]=i**2;
+        // }
+        // let summ = 0;
+        // for (let i=0; i<arr.length; i++){
+        //     summ+=arr[i];
+        // }
+        // console.log(summ)
+
+        // let arr = [1,2,3,4,6,5].join(' aaa ');
+        
+
+
+        let arr = [0,1,2,3,4,6,5,-5,18,-1]
+        arr.sort (function(a,b){
+            return a-b
+        })
+        arr.sort (function(a,b){
+            return b-a
+        })
+        arr.sort ((a,b)=>a-b);// сортировка по возрастанию
+        arr.sort ((a,b)=>b-a) // сортировка по убыванию
+
+
+        console.log(arr)
+
+
+
+
+
+
+
+
+    </script>
+</body>
